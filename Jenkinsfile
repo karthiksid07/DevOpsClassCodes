@@ -24,7 +24,7 @@ pipeline{
 		    
 		  echo 'codeReview'
                   sh 'mvn pmd:pmd'
-		  recordIssues(tools: [pmdParser()])
+		 // recordIssues(tools: [pmdParser()])
               }
           }
            stage('UnitTest'){
